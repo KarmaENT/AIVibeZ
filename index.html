@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Studio Wrapper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#4f46e5',
+              'primary-hover': '#4338ca',
+              'secondary': '#111827',
+              'background': '#030712',
+              'surface': '#111827',
+              'on-surface': '#f9fafb',
+              'on-surface-secondary': '#9ca3af',
+              'border': '#374151',
+            },
+            fontFamily: {
+                sans: ['Inter', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <script>
+    // This object holds the public environment variables.
+    // In a real-world build setup, this would be populated automatically.
+    window.APP_CONFIG = {
+      SUPABASE_PROJECT_URL: 'https://uwmmeggxkflmrnskxdyz.supabase.co',
+      SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV3bW1lZ2d4a2ZsbXJuc2t4ZHl6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTE5NjQ2NDksImV4cCI6MjA2NzU0MDY0OX0.2FoO7Ys2FCKXTgFCodbNXM5PKsf1moFfkoskWyuPOqc',
+      STRIPE_PRO_PLAN_PRICE_ID: 'price_1RiZaGPvjOzjp0AudZWIGrYG',
+    };
+  </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/client": "https://esm.sh/react-dom@^19.1.0/client",
+    "lucide": "https://esm.sh/lucide@^0.525.0",
+    "@google/genai": "https://esm.sh/@google/genai@^0.19.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.45.1",
+    "jszip": "https://esm.sh/jszip@^3.10.1",
+    "file-saver": "https://esm.sh/file-saver@2.0.5",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background text-on-surface">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

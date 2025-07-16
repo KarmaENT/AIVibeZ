@@ -1,0 +1,6 @@
+{
+  "name": "AI VibeZ Studio V2",
+  "description": "A custom UI wrapper that simulates the experience of using aistudio.google.com/apps. It includes user authentication, subscription tier monetization, and a code generation interface based on user prompts.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
